@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_11_19_102345) do
     t.string "Creator"
     t.date "Created"
     t.date "Updated"
-    t.integer "Vote", default: 0
+    t.integer "Vote"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
