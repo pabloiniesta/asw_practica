@@ -1,0 +1,54 @@
+<%= form_with(model: issue, local: true) do |form| %>
+  <% if issue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
+
+      <ul>
+        <% issue.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Title %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Description %>
+    <%= form.text_field :Description %>
+  </div>
+ 
+
+  <div class="field">
+    <%= form.label :Type %>
+    <%= form.select :Type,["bug","enhancement","proposal","task"],selected:"bug" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Priority %>
+    <%= form.select :Priority,["trivial","minor","major","critical","blocker"],selected:"major" %>
+  </div>
+
+
+
+  <div class="field">
+    <%= form.label :Asignee %>
+    <%= form.collection_select :Asignee, Usuario.all ,:name,:name,{:include_blank => 'No assigned user'} %>
+  </div>
+
+  
+
+  <div class="field">
+    <%= form.label :Created %>
+    <%= form.date_select :Created %>
+  </div>
+
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

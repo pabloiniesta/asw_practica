@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Title: MyString
+  Description: MyString
+  Type: MyString
+  Priority: MyString
+  Status: MyString
+  Asignee: MyString
+  Creator: MyString
+  Created: 2019-11-19
+  Updated: 2019-11-19
+  Vote: 1
+
+two:
+  Title: MyString
+  Description: MyString
+  Type: MyString
+  Priority: MyString
+  Status: MyString
+  Asignee: MyString
+  Creator: MyString
+  Created: 2019-11-19
+  Updated: 2019-11-19
+  Vote: 1

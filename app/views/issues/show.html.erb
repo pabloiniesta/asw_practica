@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @issue.Title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @issue.Description %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @issue.Type %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @issue.Priority %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @issue.Status %>
+</p>
+
+<p>
+  <strong>Asignee:</strong>
+  <%= @issue.Asignee %>
+</p>
+
+<p>
+  <strong>Creator:</strong>
+  <%= @issue.Creator %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @issue.Created %>
+</p>
+
+<p>
+  <strong>Updated:</strong>
+  <%= @issue.Updated %>
+</p>
+
+<p>
+  <strong>Vote:</strong>
+  <%= @issue.Vote %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
