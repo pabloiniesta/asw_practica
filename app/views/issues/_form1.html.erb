@@ -36,7 +36,7 @@
 
   <div class="field">
     <%= form.label :Asignee %>
-    <%= form.collection_select :Asignee, Usuario.all ,:name,:name,{:include_blank => 'No assigned user'} %>
+    <%= form.collection_select :Asignee, User.all ,:name,:name,{:include_blank => 'No assigned user'} %>
   </div>
 
   
