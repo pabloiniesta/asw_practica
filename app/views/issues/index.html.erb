@@ -20,7 +20,7 @@
   </thead>
 
   <tbody>
-    <% @issues.each do |issue| %>
+    <% @issues.order("title ASC").each do |issue| %>
       <tr>
         <td><%= issue.Title %></td>
         <td><%= issue.Description %></td>
