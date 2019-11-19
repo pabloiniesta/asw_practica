@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p id="alert"><%= alert %></p><h1>Login</h1><%= form_tag sessions_path do |form| %>
   <div class="field">
     <%= label_tag :email %>
@@ -8,30 +7,7 @@
     <%= password_field_tag :password %>
   </div>  <div class="actions">
     <%= submit_tag "Login"%>
-=======
-<p id=”alert"><%= alert %></p>
-<h1>Login</h1>
-<%= form_tag sessions_path do |form| %>
-  <div class="field">
-    <%= label_tag :email %>
-    <%= text_field_tag :email %>
-  </div>  
-  <div class="field">
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-  </div> 
-   <div class="actions">
-    <%= submit_tag "Login”"%>
->>>>>>> 027629a87e8ca0464a44807f24fc195ed0e8f57f
   </div>
 <% end %>
 
 <%= google_sign_in_button 'Sign in with my Google account', proceed_to: issues_url %>
-
-  
-
-
-
-
-
-
