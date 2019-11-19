@@ -58,4 +58,4 @@ gem 'jquery-rails'
 gem 'sassc-rails'
 gem 'google_sign_in'
 gem "fog"
-gem "paperclip", "~> 4.2"
+gem "paperclip", "~> 5.2"
